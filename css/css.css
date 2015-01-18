@@ -1,0 +1,117 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#mainDiv{
+	width: 500px;
+	height: 500px;
+	background-color: #47B576;
+	margin: 100px auto;
+	position: relative;
+}
+#button{
+	position: absolute;
+	margin: 200px 200px;
+	z-index: 9;
+}
+#button a{
+	display: block;
+	width: 100px;
+	height: 100px;
+	text-decoration: none;
+	font: 20px "Microsoft Yahei";
+	color: #47B576;
+	text-align: center;
+	line-height: 100px;
+	background-color: #FFF;
+	border: none;
+	border-radius: 50%;
+}
+#cn-wrapper{
+	position: absolute;
+	background-color: transparent;
+	width: 300px;
+	height: 300px;
+	margin: 100px 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform .3s ease-in-out;
+	-webkit-transform: scale(0);
+}
+/*.cn-wrapper ::after{
+  content:"";
+  display:block;
+  font-size:2em;
+  width:120px;
+  height:120px;
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  border-radius: 50%;
+  z-index:8;
+  background-color: #FFF;
+}*/
+#cn-wrapper ul{
+	list-style: none;
+}
+#cn-wrapper li{
+	display: block;
+	width: 180px;
+	height: 180px;
+	left: -30px;
+	top: -30px;
+	background-color: #3F9966;
+	position: absolute;
+	-webkit-transform-origin:100% 100%;
+}
+#cn-wrapper li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#cn-wrapper li a span{
+	display: block;
+	font: 12px "Microsoft Yahei";
+	color: #FFF;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	-webkit-transform:skew(-54deg);
+	-webkit-transform-origin:50% 50%;
+}
+#cn-wrapper li:hover,
+#cn-wrapper li:active,
+#cn-wrapper li:focus{
+	background-color: #3FA36A;
+}
+#cn-wrapper li:first-child{
+	-webkit-transform: rotate(-6deg) skew(54deg);
+}
+#cn-wrapper li:nth-child(2){
+	-webkit-transform: rotate(33deg) skew(54deg);
+}
+#cn-wrapper li:nth-child(3){
+	-webkit-transform: rotate(72deg) skew(54deg);
+}
+#cn-wrapper li:nth-child(4){
+	-webkit-transform: rotate(111deg) skew(54deg);
+}
+#cn-wrapper li:nth-child(5){
+	-webkit-transform: rotate(150deg) skew(54deg);
+}
+/*#cn-wrapper li:first-child a span{
+	-webkit-transform: rotate(-96deg) skew(-54deg);
+}
+#cn-wrapper li:nth-child(2) a span{
+	-webkit-transform: rotate(-57deg) skew(-54deg);
+}
+#cn-wrapper li:nth-child(3) a span{
+	-webkit-transform: rotate(-18deg) skew(-54deg);
+}
+#cn-wrapper li:nth-child(4) a span{
+	-webkit-transform: rotate(21deg) skew(-54deg);
+}
+#cn-wrapper li:nth-child(5) a span{
+	-webkit-transform: rotate(60deg) skew(-54deg);
+}
+*/
